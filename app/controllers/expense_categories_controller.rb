@@ -1,5 +1,6 @@
 class ExpenseCategoriesController < ApplicationController
   before_action :set_expense_category, only: [:show, :edit, :update, :destroy]
+  before_action :require_logged_in
 
   # GET /expense_categories
   # GET /expense_categories.json
