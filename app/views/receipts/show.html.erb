@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Expense category:</strong>
+  <%= @receipt.expense_category %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @receipt.total %>
+</p>
+
+<%= link_to 'Edit', edit_receipt_path(@receipt) %> |
+<%= link_to 'Back', expense_categories_path %>
